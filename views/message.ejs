@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <div class="jumbotron centered">
+    <i class="fas fa-taxi fa-6x"></i>
+    <h1 class="display-3">Details</h1>
+    <p class="secret-text">lets share the cab details to our traveller</p>
+
+    <form action="/message" method="POST" id="form1">
+      <div class="form-group">
+        <label for="inde">please enter id:</label>
+        <input type="text" name="inde" id="" />
+        <textarea
+          class="container"
+          name="msg"
+          form="form1"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+  </div>
+</div>
+<%- include('partials/footer') %>

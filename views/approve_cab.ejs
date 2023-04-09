@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+<div class="jumbotron text-center">
+  <div class="container">
+    <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Msg</th>
+          <th scope="col">To</th>
+          <th scope="col">From</th>
+          <th scope="col">Date</th>
+          <th scope="col">time</th>
+          <th scope="col">delete</th>
+        </tr>
+      </thead>
+      <% use.map((u)=>{ %>
+      <tr>
+        <td><%= u.name %></td>
+        <td><%= u.msg %></td>
+        <td><%= u.to %></td>
+        <td><%= u.for %></td>
+        <td><%= u.date %></td>
+        <td><%= u.time %></td>
+        <td><button type="button" class="btn btn-danger">Reject</button></td>
+      </tr>
+      <% }) %>
+
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

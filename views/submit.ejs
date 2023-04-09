@@ -1,0 +1,51 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <div class="jumbotron centered">
+    <i class="fas fa-taxi fa-6x"></i>
+    <h1 class="display-3">Trip Details</h1>
+    <p class="secret-text">Don't be shy share your trip deatails!</p>
+
+    <form action="/submit" method="POST">
+      <div class="form-group">
+        <label for="name">name</label>
+        <input type="text" class="form-control" name="name" />
+      </div>
+      <div class="form-group">
+        <label for="to">To</label>
+        <input type="text" class="form-control" name="to" />
+      </div>
+      <div class="form-group">
+        <label for="for">For</label>
+        <input type="text" class="form-control" name="for" />
+      </div>
+      <div class="form-group">
+        <label for="participant">No of people accompany</label>
+        <input type="number" class="form-control" name="participant" />
+      </div>
+      <div class="form-group">
+        <label for="date">Date of Journey</label>
+        <input type="date" class="form-control" name="date" />
+      </div>
+      <div class="form-group">
+        <label for="time">time of Journey</label>
+        <input type="time" class="form-control" name="time" />
+      </div>
+
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+    <a href="/approve_cab"> see approve cab</a>
+  </div>
+</div>
+<%- include('partials/footer') %>
+
+<!-- const userSchema = new mongoose.Schema({
+  username: String,
+  password: String,
+  name: String,
+  to: String,
+  for: String,
+  participant: Number,
+  date: String,
+  time: String,
+}); -->
